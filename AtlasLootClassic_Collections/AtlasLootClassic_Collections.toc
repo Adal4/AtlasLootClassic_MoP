@@ -1,8 +1,10 @@
-﻿## Interface: 50503
+﻿## Interface: 50504
 ## Author: Snowflame0
 ## Version: @project-version@
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
+## IconTexture: Interface\Icons\INV_Box_01
+## Category: AtlasLoot
 
 ## Title: AtlasLootClassic |cFF33FFBDMoP|r |cFF0099FF[Collections]|r
 ## Notes: AtlasLoot Collections loot tables

@@ -1,10 +1,12 @@
-﻿## Interface: 50503
+﻿## Interface: 50504
 ## Author: Snowflame0
 ## Version: @project-version@
 ## SavedVariables: AtlasLootClassicDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibDBIcon-1.0, LibDataBroker-1.1
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
+## IconTexture: Interface\Icons\INV_Box_01
+## Category: AtlasLoot
 
 ## Title: AtlasLootClassic |cFF33FFBDMoP|r |cFF22B14C[Core]|r
 ## Notes: Displays loot tables from various aspects of the game
