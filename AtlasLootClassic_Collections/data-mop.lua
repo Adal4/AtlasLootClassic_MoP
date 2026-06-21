@@ -2577,7 +2577,7 @@ data["CompanionsMoP"] = {
             -- Phase 2
             { 7,  90900 }, -- Imperial Moth
             { 8,  90902 }, -- Imperial Silkworm
-            -- Phase 5
+            -- Phase 3? 5?
             { 10, 94903 }, -- Pierre
             { 11, 100905 }, -- Rascal-Bot
             }
@@ -2813,12 +2813,14 @@ data["LunarFestivalMoP"] = {
                 { 1,  21100 }, -- Coin of Ancestry
                 { 2,  74610 }, -- Lunar Lantern
                 { 3,  74611 }, -- Festival Lantern
-                { 5,  21157 }, -- Festive Green Dress
-                { 6,  21538 }, -- Festive Pink Dress
-                { 7,  21539 }, -- Festive Purple Dress
-                { 8,  21541 }, -- Festive Black Pant Suit
-                { 9, 21544 }, -- Festive Blue Pant Suit
-                { 10, 21543 }, -- Festive Teal Pant Suit
+                { 5,  89999 }, -- Everlasting Alliance Firework
+                { 6,  90000 }, -- Everlasting Horde Firework
+                { 8,  21157 }, -- Festive Green Dress
+                { 9,  21538 }, -- Festive Pink Dress
+                { 10,  21539 }, -- Festive Purple Dress
+                { 11,  21541 }, -- Festive Black Pant Suit
+                { 12, 21544 }, -- Festive Blue Pant Suit
+                { 13, 21543 }, -- Festive Teal Pant Suit
             },
         },
         {
@@ -2908,22 +2910,18 @@ data["ValentinesdayMoP"] = {
         { -- SFKApothecaryH
         name = C_Map_GetAreaInfo(209) .. " - " .. AL["Apothecary Hummel"],
         [NORMAL_DIFF] = {
-            { 1,  270884 }, -- Winking Eye of Love 502
-            { 2,  270885 }, -- Winking Eye of Love 489
-            { 3,  270886 }, -- Choker of the Pure Heart 502
-            { 4,  270889 }, -- Choker of the Pure Heart 489
-            { 5,  270890 }, -- Heartbreak Charm 502
-            { 6,  270891 }, -- Heartbreak Charm 489
-            { 7,  270892 }, -- Sweet Perfume Broach 502
-            { 8,  270893 }, -- Sweet Perfume Broach 489
-            { 9,  270894 }, -- Shard of Pirouetting Happiness 502
-            { 10,  270895 }, -- Shard of Pirouetting Happiness 489
-            { 12,  49641 }, -- Faded Lovely Greeting Card
-            { 13,  49715 }, -- Forever-Lovely Rose
-            { 14,  50250 }, -- X-45 Heartbreaker
-            { 15, 50446 }, -- Toxic Wasteling
-            { 16, 50471 }, -- The Heartbreaker
-            { 17, 50741 }  -- Vile Fumigator's Mask
+            { 1,  "INV_ValentinesBoxOfChocolates02", nil, AL["Heart-Shaped Box"] }, -- Heart-Shaped Box
+            { 2,  50250 }, -- X-45 Heartbreaker
+            { 3,  49715 }, -- Forever-Lovely Rose
+            { 4,  50741 },  -- Vile Fumigator's Mask
+            { 5,  50446 }, -- Toxic Wasteling
+            { 6,  50471 }, -- The Heartbreaker
+            { 8,  93391 }, -- Heartbreak Charm
+            { 9,  93392 }, -- Winking Eye of Love
+            { 10, 93393 }, -- Sweet Perfume Broach
+            { 11, 93394 }, -- Choker of the Pure Heart
+            { 12, 93395 }, -- Shard of Pirouetting Happiness
+            { 14, 49641 } -- Faded Lovely Greeting Card
             }
         }
     }
@@ -2960,17 +2958,17 @@ data["MidsummerFestivalMoP"] = {
         {
         name = C_Map_GetAreaInfo(3717) .. " - " .. AL["Ahune"],
         [NORMAL_DIFF] = {
-                { 1, 54536 }, -- Satchel of Chilled Goods
-                { 2, 95426 }, -- Frostscythe of Lord Ahune
-                { 4, 95425 }, -- Cloak of the Frigid Winds
-                { 5, 95427 }, -- Icebound Cloak
-                { 6, 95428 }, -- Shroud of Winter's Chill
-                { 7, 95429 }, -- The Frost Lord's Battle Shroud
-                { 8, 95430 }, -- The Frost Lord's War Cloak
-                { 10, 35723 }, -- Shards of Ahune
-                { 16, 35498 }, -- Formula: Enchant Weapon - Deathfrost
-                { 18, 53641 }, -- Ice Chip
-                { 20, 35557 }, -- Huge Snowball
+                { 1, "INV_Misc_Bag_17", nil, AL["Satchel of Chilled Goods"] }, -- Satchel of Chilled Goods
+                { 2, 280389 }, -- Frostscythe of Lord Ahune
+                { 3, 53641  }, -- Ice Chip
+                { 5, 280386 }, -- Cloak of the Frigid Winds
+                { 6, 280383 }, -- Icebound Cloak
+                { 7, 280385 }, -- Shroud of Winter's Chill
+                { 8, 280384 }, -- The Frost Lord's Battle Shroud
+                { 9, 280387 }, -- The Frost Lord's War Cloak
+                { 11, 35498 }, -- Formula: Enchant Weapon - Deathfrost
+                { 12, 35557 }, -- Huge Snowball
+                { 13, 35723 } -- Shards of Ahune
             }
         }
     }
@@ -3001,12 +2999,11 @@ data["BrewfestMoP"] = {
                 {15, 33927}, -- Brewfest Pony Keg
                 {16, 90427}, -- Pandaren Brewpack
                 {18, 32233}, -- Wolpertinger's Tankard
-                {19, 46707}, -- Pint-Sized Pink Pachyderm
-                {21, 37599}, -- "Brew of the Month" Club Membership Form
-                {23, 37750}, -- Fresh Brewfest Hops
+                {20, 37599}, -- "Brew of the Month" Club Membership Form
+                {22, 37750}, -- Fresh Brewfest Hops
                 {24, 39477}, -- Fresh Dwarven Brewfest Hops
-                {25, 39476}, -- Fresh Goblin Brewfest Hops
-                {26, 37816} -- Preserved Brewfest Hops
+                {24, 39476}, -- Fresh Goblin Brewfest Hops
+                {25, 37816} -- Preserved Brewfest Hops
             }
         },
         {
@@ -3027,18 +3024,19 @@ data["BrewfestMoP"] = {
         {
             name = C_Map_GetAreaInfo(1584) .. " - " .. AL["Coren Direbrew"],
             [NORMAL_DIFF] = {
-                { 1,  257873 }, -- Bitterest Balebrew Charm
-                { 2,  257877 }, -- Bubbliest Brightbrew Charm
-                { 3,  257880 }, -- Coren's Cold Chromium Coaster
-                { 4,  257884 }, -- Mithril Wristwatch
-                { 5,  257881 }, -- Thousand-Year Pickled Egg
-                { 6,  257885 }, -- Brawler's Statue
-                { 8,  257863 }, -- Direbrew's Bloodied Shanker
-                { 9,  257865 }, -- Tremendous Tankard O' Terror
-                {16, 33977}, -- Swift Brewfest Ram
-                {17, 37828}, -- Great Brewfest Kodo
-                {19, 37863}, -- Direbrew's Remote
-                {21, 38280} -- Direbrew's Dire Brew
+                { 1, "INV_Cask_02", nil, AL["Keg-Shaped Treasure Chest"] }, -- Keg-Shaped Treasure Chest
+                { 2,  33977 }, -- Swift Brewfest Ram
+                { 3,  37828 }, -- Great Brewfest Kodo
+                { 4,  37863 }, -- Direbrew's Remote
+                { 5,  257863 }, -- Direbrew's Bloodied Shanker
+                { 6,  257865 }, -- Tremendous Tankard O' Terror
+                { 8,  257873 }, -- Bitterest Balebrew Charm
+                { 9,  257877 }, -- Bubbliest Brightbrew Charm
+                {10,  257880 }, -- Coren's Cold Chromium Coaster
+                {11,  257884 }, -- Mithril Wristwatch
+                {12,  257881 }, -- Thousand-Year Pickled Egg
+                {13,  257885 }, -- Brawler's Statue
+                {15,  38280} -- Direbrew's Dire Brew
             }
         }
     }
@@ -3108,18 +3106,19 @@ data["HalloweenMoP"] = {
         { -- SMHeadlessHorseman
         name = C_Map_GetAreaInfo(796) .. " - " .. AL["Headless Horseman"],
         [NORMAL_DIFF] = {
-                { 1, 263010 }, -- Seal of Ghoulish Glee
-                { 2, 263011 }, -- The Horseman's Ring
-                { 3, 263012 }, -- Wicked Witch's Signet
-                { 4, 263013 }, -- Band of the Petrified Pumpkin
-                { 5, 263014 }, -- The Horseman's Horrific Hood
-                { 6, 263018 }, -- The Horseman's Sinister Slicer
-                { 8, 33292 }, -- Hallowed Helm
-                { 10, 34068 }, -- Weighted Jack-o'-Lantern
-                { 12, 33277 }, -- Tome of Thomas Thomson
-                { 16, 37012 }, -- The Horseman's Reins
-                { 18, 37011 }, -- Magic Broom
-                { 20, 33154 }, -- Sinister Squashling
+                { 1, "INV_Misc_Bag_28_Halloween", nil, AL["Loot-Filled Pumpkin"] }, -- Loot-Filled Pumpkin
+                { 2, 37012 }, -- The Horseman's Reins
+                { 3, 37011 }, -- Magic Broom
+                { 4, 33154 }, -- Sinister Squashling
+                { 5, 33292 }, -- Hallowed Helm
+                { 6, 263014 }, -- The Horseman's Horrific Hood
+                { 7, 263018 }, -- The Horseman's Sinister Slicer
+                { 9, 263010 }, -- Seal of Ghoulish Glee
+                {10, 263011 }, -- The Horseman's Ring
+                {11, 263012 }, -- Wicked Witch's Signet
+                {12, 263013 }, -- Band of the Petrified Pumpkin
+                {14, 34068 }, -- Weighted Jack-o'-Lantern
+                {15, 33277 }, -- Tome of Thomas Thomson
             }
         }
     }
