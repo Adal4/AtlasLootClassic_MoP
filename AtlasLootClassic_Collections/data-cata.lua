@@ -1461,7 +1461,7 @@ data["LunarFestivalCata"] = {
     },
 }
 
-data["ValentinesdayCata"] = {
+data["ValentinesDayCata"] = {
     name = AL["Love is in the Air"],
     ContentType = WORLD_EVENT_CONTENT,
     LoadDifficulty = NORMAL_DIFF,
